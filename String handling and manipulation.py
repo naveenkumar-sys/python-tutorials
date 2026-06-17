@@ -56,7 +56,7 @@ print(name.startswith("naveen"))
 print(name.endswith("kumar")) 
 # find() - find the first position of the word or character
 print(name.find("a"))
-# count() - count the char or word of occurence in the string
+# count() - count the char or word of only  occurence in the string
 print(name.count("k"))
 #isalpha() - check only has character in the string
 print("Naveen".isalpha())
