@@ -1,36 +1,36 @@
-# string = "hello how are you!"
-# arr= string.split(" ")  #here splite same as js but join will differ  , split is used to convert array to string 
-# print("".join(arr[0]))
+string = "hello how are you!"
+arr= string.split(" ")  #here splite same as js but join will differ  , split is used to convert array to string 
+print("".join(arr[0]))
 
-# promo_code = "use Zomato100 to get off on your first order"
+promo_code = "use Zomato100 to get off on your first order"
 
-# code = "Zomato100"
+code = "Zomato100"
 
-# # splited_code = promo_code.split(" ")
-# # print(splited_code)
-# # for i in range(len(splited_code)):
-# #     if(splited_code[i] == code ):
-# #         print(i)
+# splited_code = promo_code.split(" ")
+# print(splited_code)
+# for i in range(len(splited_code)):
+#     if(splited_code[i] == code ):
+#         print(i)
 
-# if(code in promo_code):  #in will check whether the value is exist in collection  
-#     print("yes")
+if(code in promo_code):  #in will check whether the value is exist in collection  
+    print("yes")
     
-# if(code is "Zomato100"): # is will check whether the given string is same or not , it check by reference 
-#     print("yes")
-# else:
-#     print("No")
+if(code is "Zomato100"): # is will check whether the given string is same or not , it check by reference 
+    print("yes")
+else:
+    print("No")
     
-# #taking first name first letter and last name last letter
-# name = "naveen kumar"
-# # print(name.split(" "))
-# first=name.split(" ")[0]  # this split will split as string with where is space
-# last=name.split(" ")[1]
-# # print(first)
-# # print(last)
-# f_letter = list(first)[0].upper() # in js we use spit("") but here we use list(name)
-# l_letter = list(last)[0].upper()
-# print(f_letter)
-# print(l_letter)
+#taking first name first letter and last name last letter
+name = "naveen kumar"
+# print(name.split(" "))
+first=name.split(" ")[0]  # this split will split as string with where is space
+last=name.split(" ")[1]
+# print(first)
+# print(last)
+f_letter = list(first)[0].upper() # in js we use spit("") but here we use list(name)
+l_letter = list(last)[0].upper()
+print(f_letter)
+print(l_letter)
 
 
 name = "naveen kumar"
