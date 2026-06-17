@@ -1,6 +1,7 @@
 # for lopp in python we use when the we know the iteration count  , like untill this many iteration we have to run the loop
 names=["sarvana","ramesh","nandhini","kamal"]
 new_names=[]
+#(range has three parameters which is start->where to start stop->where to stop step-> how will iterate ++ , -- , *2 )
 for i in range(len(names)): #here we are looping with index with the name i to length of that names list , use when we want position 
    cap_names= names[i].upper()
    new_names.append(cap_names)
@@ -53,3 +54,30 @@ while True:
     cart.append(product)
 
 print(cart)
+
+contolling the loop 
+start from 1 and stop at 9
+for i in range(1,10):
+    print(i)
+
+print("----------------")
+    
+#here we start with 10 and ends with 0 with step of reverse iteration -1
+for i in range(10,0,-1):
+    print(i)
+print("----------------------")    
+
+#here we start with 1 and end with 11-1=10 with step of iteration 2
+for i in range(1,11,2):
+    print(i)
+print("---------------")
+    
+    
+    
+    
+    
+#nested forloop 
+for i in range(5):
+    for j in range(5,i,-1):
+        print("*",end=" ")
+    print(end="\n")

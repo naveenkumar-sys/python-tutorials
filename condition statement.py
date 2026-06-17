@@ -49,3 +49,5 @@ if order_amount>=1000 and order_day in ("saturday" , "sunday") and is_member == 
     print("You will get coupon")
 else:
     print("You are not valid for this coupon")
+    
+    
