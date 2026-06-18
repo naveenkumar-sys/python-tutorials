@@ -37,3 +37,7 @@ outer()
 print(len([1,2,3])) #buit-in words 
 
 
+#using f string in python -> where we can add the varibale inside the string
+
+name="kamal"
+print(f"my is name is {name}") 
