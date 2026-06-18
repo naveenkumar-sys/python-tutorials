@@ -55,8 +55,8 @@ while True:
 
 print(cart)
 
-contolling the loop 
-start from 1 and stop at 9
+# contolling the loop 
+# start from 1 and stop at 9
 for i in range(1,10):
     print(i)
 
@@ -78,6 +78,12 @@ print("---------------")
     
 #nested forloop 
 for i in range(5):
-    for j in range(5,i,-1):
+    for j in range(5,i,-1): #range has three parameter start , stop , step
         print("*",end=" ")
     print(end="\n")
+print("----------------")
+for i in range(6):
+    for j in range(0,i):
+        print("*",end=" ")
+    print(end="\n")
+
