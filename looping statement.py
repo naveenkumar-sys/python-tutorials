@@ -1,5 +1,6 @@
 # # for lopp in python we use when the we know the iteration count  , like untill this many iteration we have to run the loop
 
+# important :~ range() = iteration count / indexes  ,for value in list = actual values.
 # # Need only values?
 # # → for item in collection
 
@@ -258,7 +259,128 @@
 # for i in range(9,101,3):
 #     print(i)
 
-for i in range(1,4):
-    for j in range(i):
-        print(i ,end=" ")
-    print(end="\n")
+# for i in range(1,4):
+#     for j in range(i):
+#         print(i ,end=" ")
+#     print(end="\n")
+
+# #Exercise 28. Dictionary Filter: Extract pairs where value exceeds a threshold.
+# scores = {"Alice": 85, "Bob": 70, "Charlie": 95, "David": 60} 
+# threshold = 75
+# my_dic={}
+# for key,value in scores.items():
+#     if(value>75):
+#         my_dic[key]=value
+# print(my_dic)
+
+# #Exercise 29. Find common elements (Intersection) using loop
+# list_a = [1, 2, 3, 4,5,7]
+# list_b = [4, 5, 6, 7, 8]
+# common=[]
+# for value_a in list_a:
+#     for value_b in list_b:
+#         if(value_a==value_b):
+#             common.append(value_a)
+
+# print(common)
+
+# # Exercise 30. Remove duplicates without set
+# duplicate=[1, 2, 2, 3, 4, 4, 4, 5]
+# new_list=[]
+
+# for value in duplicate:  #when using for it will take value one by one 
+#     if value in new_list:  # when we if it will check all value continuosly same time act like include() method in js 
+#         continue  #just skip and pass to next iteration
+#     else:
+#         new_list.append(value)
+# print(new_list)
+
+# #Exercise 31. Even/Odd Segregation: Move evens to front, odds to back
+# new_list=[1, 2, 3, 4, 5, 6]
+# even=[]
+# odd=[]
+
+# for value in new_list:
+#     if(value%2==0):
+#         even.append(value)
+#     else:
+#         odd.append(value)
+# # print(even)
+# # print(odd)
+# merged_list=even+odd #merging two array 
+# print(merged_list)
+
+# #Exercise 32. List Rotation: Rotate elements left by k positions
+# nums = [1, 2, 3, 4, 5]
+# k = 2
+
+# # Perform the rotation k times
+# for _ in range(k): #iterating without value 
+#     # Remove the first element
+#     first_element = nums.pop(0)
+#     # Move it to the end
+#     nums.append(first_element)
+
+# print("Rotated List:", nums)
+
+# #Exercise 33. Word frequency counter
+# text = "apple banana apple orange banana apple"
+# new_text=text.split(" ")
+# freq={}
+
+# # print(new_text)
+# for name1 in new_text:
+#     count=0
+#     for name2 in new_text:
+#         if(name1==name2):
+#             count+=1
+#     freq[name1]=count
+# print(freq)   
+
+# #Exercise 34. Display fibonacci series up to 10 terms (sum of previous two numbers give next number)
+# n_terms = 10
+# num1=0
+# num2=1
+# fib_list=[]
+
+# for i in range(n_terms+1):
+#     print(num1,end=" ")
+#     digit=num1+num2
+#     num1=num2
+#     num2=digit
+
+# # Exercise 35. Perfect number check
+# num = 28
+# res=[]
+# sum=0
+# for i in range(1,28):
+#     if(num%i==0):
+#         res.append(i)
+# for val in res:
+#     sum+=val
+ 
+# if(sum==num):
+#     print(f"{num} is Perfect Number")
+# else:
+#     print(f"{num} Not a perfect Number")
+        
+# # Exercise 37. Display all prime numbers within a range
+# start = 25
+# end = 50
+# print("prime Nmber between 25 and 50 are:")
+# for i in range(25,51):
+#     for j in range(2,i):
+#         if(i%j==0):
+#             break
+#     else:
+#         print(i,end=" ")
+    
+# #Exercise 38. Find the sum of the series up to n terms
+# term=5
+# sum=0
+# for i in range(1,term+1):
+#     # print(i)
+#     for j in range(1,i+1):
+#         sum+=2
+# print(sum)
+        

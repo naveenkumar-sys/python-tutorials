@@ -112,15 +112,175 @@
 #     count+=1
 # print(count)
     
-# Exercise 14. Reverse an integer number
-num =76542
-new_list=[]
-split = list(str(num))
-print(split)
-for i in reversed(split):
-    new_list.append(i)
+# # Exercise 14. Reverse an integer number
+# num =76542
+# new_list=[]
+# split = list(str(num))
+# print(split)
+# for i in reversed(split):
+#     new_list.append(i)
 
-final=int("".join(new_list))
-print(final)
-print(type(final))
-# print(type(new_list))
+# final=int("".join(new_list))
+# print(final)
+# print(type(final))
+# print(type(new_list)) 
+# #Exercise 15. Find largest and smallest digit in a number
+# num = str(273491)
+# largest_num=0
+# smallest_num=int(num[0])
+# print(type(num))
+# for n in num:
+#     for j in num:
+#         n=int(n)
+#         j=int(j)
+#         if(n>j):
+#             if(largest_num<n):
+#                 largest_num=n
+#         else:
+#             if(smallest_num>n):
+#                 smallest_num=n         
+# print(largest_num)
+# print(smallest_num)
+
+# #Exercise 16. Check if a number is a palindrome
+# number = str(121)
+# reverse =""
+# # print(type(number))
+# for ch in reversed(number):
+#     reverse+=ch
+
+# if number==reverse:
+#     print("yes")
+# else:
+#     print("No")
+
+# # Exercise 17. Find factorial of a number
+# num = 5
+# factorial=1;
+# for i in range(1,num+1):
+#     factorial*=i
+# print(factorial)
+
+# #Exercise 18. Collatz Conjecture: Generate a sequence until it reaches 1
+# # Practice Problem: The Collatz conjecture states that if you start with any positive integer n, and if n is even, divide it by 2; if n is odd, multiply it by 3 and add 1. 
+# # Repeat the process. The sequence will always eventually reach 1. Write a program to print this sequence for a given number.
+# n = 6
+# res=[n]
+# while n!=1:
+#     if(n%2==0):
+#         n=n//2  #round of the value will be floor(like math.floor(n/2) in js)
+#         res.append(n)
+#     else:
+#         n=(n*3)+1
+#         res.append(n)
+# print(res)
+
+# # Exercise 19. Armstrong Number Check
+# num = str(153)
+# value=0
+# # print(type(num))
+# num = 153
+# num_str = str(num)
+# power = len(num_str)
+# total = 0
+
+# for digit in num_str:
+#     total += int(digit) ** power
+
+# if total == num:
+#     print(f"{num} is an Armstrong number")
+# else:
+#     print(f"{num} is not an Armstrong number")
+
+# #Exercise 20. Print right-angled triangle Number Pattern using a Loop
+
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print(j,end=" ");
+#     print()
+
+# #Exercise 21. Print the decreasing pattern
+
+# for i in range(5,0,-1):
+#     for j in range(i,0,-1):
+#         print(j,end=" ")
+#     print()
+
+# # Exercise 22. Print the alternate numbers pattern
+
+# for i in range(1,20,2):
+#     print(i, end=" ")
+
+# # Exercise 23. Print Alphabet pyramid (A, AB, ABC) pattern
+# import string
+
+# for i in range(1,6):
+#     for ch in string.ascii_uppercase[:i]:
+#         print(ch,end=" ")
+#     print()
+
+# #Exercise 23. Print Alphabet pyramid (A, BB, CCC) pattern
+# # method1
+# import string
+
+# for i in range(5): #outer loop , which is for rows 
+#     for ch in string.ascii_uppercase[i]: # to find the chr
+#         for j in range(i+1): #how many the char will print , for columns
+#             print(ch,end=" ")
+#     print()
+
+# #method2
+# # print(chr(66)) #B
+# rows = 5
+# ascii_value = 65 # Starting with 'A'
+
+# for i in range(rows):
+#     # Calculate current letter
+#     letter = chr(ascii_value + i)
+#     # Print the letter (i + 1) times
+#     for j in range(i + 1):
+#         print(letter, end=" ")
+#     print()
+
+# #Exercise 24. Hollow square pattern
+
+# for i in range(1,6):
+#     for j in range(1,6):
+#         if (i == 1 or i == 5) or (j == 1 or j == 5):
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+# #Exercise 25. Print pyramid pattern of stars
+
+# for i in range(1,6):
+#     for j in range(i):
+#         print("*",end=" ")
+#     print()
+# for i in range(4,0,-1):
+#     for j in range(i):
+#         print("*",end=" ")
+#     print()
+
+# #Exercise 26. Print full multiplication table (1 to 10)
+# for i in range(1,11):
+#     for j in range(1,11):
+#         print(i*j, end=" ")
+#     print()
+
+#Exercise 27. List Cumulative Sum: Each element is the sum of all previous
+my_list=[1, 2, 3, 4]
+res=[];
+# Cumulative Sum: [1, 3, 6, 10]
+# for value in my_list:
+#     curr_value+=value
+#     res.append(curr_value)
+    
+# print(res)
+for i in range(len(my_list)): #3
+    final=0
+    for j in range(i+1):
+        final+=my_list[j]
+    res.append(final)
+print(res)
