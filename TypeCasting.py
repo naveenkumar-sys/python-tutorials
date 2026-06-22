@@ -5,11 +5,11 @@
 # important note 
 
 # Type casting works only if the value can actually be converted to that type.
-# str()   → Almost anything can become a string ✅
+# str()   → Almost anything can become text.
 
-# int()   → Must look like an integer ✅
+# int()   → Needs an integer value or a string that looks like an integer. It look for whole number
 
-# float() → Must look like a number ✅
+# float() → Needs a numeric value or a string that looks like a number. float want number thats all 
 
 
 # # More Examples:
@@ -52,3 +52,14 @@ y = float(x)
 print(type(y))
 z = str(x)
 print(type(z))
+
+
+| Value     | str() | int() | float()    |
+| --------- | ----- | ----- | -------    |
+| `45`      | ✅     | ✅     | ✅       |
+| `45.7`    | ✅     | ✅     | ✅       |
+| `"45"`    | ✅     | ✅     | ✅       |
+| `"45.7"`  | ✅     | ❌     | ✅       |
+| `"hello"` | ✅     | ❌     | ❌       |
+
+# int->expect whole number with or wihtout string and actual string can not be converted to int
