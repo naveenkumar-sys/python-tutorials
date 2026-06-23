@@ -23,7 +23,7 @@ print(my_list[::-1]) #[5,4,3,2,1] printing the list in reverse order , -1 is ste
 print(my_list[::1]) #[1,2,3,4,5] print list with left to right
 print(my_list[0:4:2]) #printing from 0th index to 3rd index with step of 2 , it first 0th index followd by 2 step of index
 
-#3.Itertating the List -> 2 type
+#3.Iterating the List -> 2 type
 # 1.only access the value 
 for  num in my_list:
     print(num)
@@ -48,7 +48,7 @@ my_list.insert(2,25)
 my_list.insert(3,[45,46,47,89])
 print(my_list)
 
-#extend - add the seqence of element at the end of the list
+#extend - add the sequence of element at the end of the list
 my_list.extend([3,5,6,7,8])
 print(my_list)
 
@@ -65,7 +65,7 @@ my_list[3]=43
 print(my_list)
 
 #2.modifying range of items
-my_list[1:4]=["apple","Orange","Grapes"] #modifying element which is in 1 index tt untill 3rd index
+my_list[1:4]=["apple","Orange","Grapes"] #modifying element which is in 1 index tt until 3rd index
 print(my_list)
 
 my_list[3:]=["banana","pineapple"]
@@ -73,3 +73,8 @@ print(my_list)
 
 # my_list[::2]=["True"]
 # print(my_list)
+
+# #Modify all the element
+# for i in range(len(my_list)):
+    
+    
