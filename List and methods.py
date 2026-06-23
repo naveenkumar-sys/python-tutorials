@@ -39,7 +39,7 @@ print("----------------------")
 
 #Adding the elements/list in the list 
 # With these three type we can add the element append , insert , extend 
-#append-add the element in end of the List , it only accept one element
+#append-add the element in end of the List , it only accept one element or single list , add nested list if we pass a parameter as list
 my_list.append("Emma")
 print(my_list)
 
@@ -76,5 +76,83 @@ print(my_list)
 
 # #Modify all the element
 # for i in range(len(my_list)):
+
+#Remove Element 
+#1.remove() -> remove the element from the list
+my_list.remove("apple")
+print(my_list)
+
+#2.pop() -> remove the element from the list
+my_list.pop()
+print(my_list)
+my_list.pop(1)
+print(my_list)
+
+#3.clear() -> clear the elements in lists return empty List
+my_list.clear()
+print(my_list)
+
+# #4.delete() -> delete entire list
+# del my_list
+# print(my_list)  # give error called my_list is not defined
+
+#Finiding the index of the given value by index() method 
+new_list=[2,5,8,6,2,4,1]
+print(new_list.index(4)) 
+
+#concatenation of two list - 2 ways 
+# 1. using + 
+second_list=[5,6,9,2,3]
+third_list=new_list+second_list
+print(third_list)
+
+#2.using extend () -> this method expect single List as parameter and add as element
+third_list.extend(["apple","Orange","pine apple"])
+print(third_list)
+
+#Nested list
+nestedlist = [[2,4,6,8,10],[1,3,5,7,9]]
+
+for item in nestedlist:
+    for val in item:
+        print(val , end=" ")
+    print()
     
-    
+#List comphrension 
+# formula - [new_value for item in iterable if condition1 if condition2]
+# What to add      → new_value
+# Loop variable    → item
+# Collection       → iterable
+
+# Example 1: Square Numbers
+res=[val*val for val in range(1,6)]
+print(res)
+#Example 2: Copy a List
+new1=[1,2,3,4]
+new2=[val for val in new1] #shallow copy
+print(new2)
+new1.append(5)
+print(new1) 
+print(new2)
+
+#Example 3: Convert Strings to Integers
+# nums = ['1', '2', '3']
+# result=[int(val) for val in nums]
+# print(result)
+
+#with condition
+#formula:[new_value for item in iterable if condition]
+#Example 4: Find even numbers
+nums = [1, 2, 3, 4, 5, 6]
+result=[val for val in nums if val%2 ==0]
+print(result)
+
+# Example 5: Length of Each Word
+words = ["apple", "banana", "cat"]
+res=[len(val) for val in words]
+print(res)
+
+# Example 6: Uppercase Words
+words = ["apple", "banana"]
+res=[val.upper() for val in words]
+print(res)
