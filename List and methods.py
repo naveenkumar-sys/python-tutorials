@@ -73,8 +73,3 @@ print(my_list)
 
 # my_list[::2]=["True"]
 # print(my_list)
-
-# #Modify all the element
-# for i in range(len(my_list)):
-    
-    
