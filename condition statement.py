@@ -1,7 +1,7 @@
 #conditional statements - whenever we want to check if this true we we enter if not we dont enter like real life secenario
 #In signal - if green-> we go , if yellow - get ready , if red - stop
 
-# signle if or else statement 
+# single if or else statement 
 age=25
 if(age>=18):
     print("you will enter")

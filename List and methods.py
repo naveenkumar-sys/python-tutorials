@@ -83,7 +83,7 @@ my_list.remove("apple")
 print(my_list)
 
 #2.pop() -> remove the element from the list
-my_list.pop()
+my_list.pop() #default remove last element in the list
 print(my_list)
 my_list.pop(1)
 print(my_list)
@@ -96,7 +96,7 @@ print(my_list)
 # del my_list
 # print(my_list)  # give error called my_list is not defined
 
-#Finiding the index of the given value by index() method 
+#Finding the index of the given value by index() method 
 new_list=[2,5,8,6,2,4,1]
 print(new_list.index(4)) 
 
