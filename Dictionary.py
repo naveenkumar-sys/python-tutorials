@@ -16,3 +16,11 @@ new_list={
 new1_list=(dict({"naveen":20,"age":21,"marks":80}))
 print(new1_list)
 #3.By using a dictionary literal
+
+
+#sorted the dict using sorted()
+dict_1={"b":1,"a":2,"c":3}
+print(sorted(dict_1.items())) #sorting dictionary by keys
+
+print(sorted(dict_1.values())) #sorted values in the dictionary by values()
+ 
