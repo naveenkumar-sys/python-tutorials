@@ -1,0 +1,65 @@
+# n Python, modules refer to the Python file, which contains Python code like Python statements, classes, functions, variables, etc. 
+# A file with Python code is defined with extension.py
+
+#two types of modules 
+    #1.buit-in modules - predefined modules which comes with python installation
+    #2.user defined modules - modules which are created by the user / by us 
+
+#importing the buit-in modules
+import math
+
+print(math.gcd(2,6))
+
+
+
+#import multiple module
+import math , random
+
+print(math.ceil(3.7))
+print(random.randint(10,20))
+
+#Import only specific classes or functions from a module
+from math import factorial
+
+print(factorial(5))
+
+#Import with renaming a module
+
+import random as rand
+
+print(rand.randrange(2,43))
+
+
+#Import all names
+from math import * #from math module we import all function , variable 
+print(pow(4,2))
+
+#user defined or user created module
+import test_module
+
+print(test_module.greet())  #in the user module we access the greet function 
+
+#Variables in Module
+import test_module
+
+print(test_module.cities_list) #access created modules list
+
+#seraxch the modules original path
+import sys
+
+print(sys.path)
+
+#reload() -> reload the module for changes in the module
+import test_module
+import time
+from importlib import reload
+
+reload(test_module) # it directly peint tha module value shich is print
+time.sleep(1) #1 second sleep
+reload(test_module)
+time.sleep(1)
+print("Reload is ended")
+
+import random
+
+print(dir(random))
