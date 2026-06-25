@@ -1,3 +1,51 @@
+1) What is an object in Python?
+Very simple answer:
+
+An object is a real usable value/thing in Python.
+
+Examples:
+
+10
+"hello"
+[1, 2, 3]
+{"name": "Naveen"}
+
+All of these are objects in Python.
+
+So yes — object can be data/value.
+
+x=10  #10 is object of class int 
+print(type(10))
+
+<class int>
+
+That means:
+
+10 is an object
+its class/type is int
+
+# ---------------------------
+Final short memory note
+Remember like this:
+Class
+
+design / blueprint / type
+
+Object
+
+actual thing / value / data created from class
+
+Example
+int → class
+10 → object
+str → class
+"hello" → object
+Student → class
+s1 = Student("Naveen") → object
+
+# ------------------------------
+
+
 # Python Must-Remember Cheat Sheet
 
 ## 1) Number
@@ -284,3 +332,9 @@ print(a.difference(b))    # {1,2}
 3. `discard()`
 4. `union()`
 5. `intersection()`
+
+
+
+
+
+

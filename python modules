@@ -63,3 +63,12 @@ print("Reload is ended")
 import random
 
 print(dir(random))
+
+
+# Easy rule
+#    Module
+#          external code / separate file / library
+#          use import
+#   Method
+#        function attached to an object/class
+#        use with dot on that object
