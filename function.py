@@ -244,8 +244,6 @@ print("The sum of all sume using reduce",sum)
 
 
 
-
-
 #  sorted() → arrange items in order and dirtectly return new list 
 
 # Use when: “Sort this data.”
