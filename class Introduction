@@ -1,0 +1,154 @@
+# A class is a blueprint.
+# From one class, we can create as many objects (instances) as we want. 
+# Each object has its own data.
+# We use an object to call the class's methods, and Python automatically passes that object as self so the method knows which object's data to work with.
+
+
+# #1.with constructor
+# class Student:
+#     #while we are creating the object , we pass the value to constructor
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+    
+#     def change_name(self,name):
+#         self.name=name
+
+# #creating object
+# s1=Student("Naveen",23)
+# s2=Student("kumar",25)
+
+# print(s1.name)
+# print(s1.age)
+
+# s1.change_name("kamal")
+# print("Student name changed:",s1.name)
+
+
+# print(s2.name)
+# print(s2.age)
+
+
+#2.wihtout constructor
+class Student:
+    #while we are creating the object , we pass the value to constructor
+    def person(self,name,age):
+        self.name=name
+        self.age=age
+    
+    def change_name(self,name):
+        self.name=name
+
+#instance
+s1=Student()
+#creating object and passing the value to method 
+s1.person("Arjun",34)
+print(s1.name)
+s1.change_name("Raj")
+print(s1.name)
+
+#Note: Every instance method must have self as its first parameter.
+
+
+#Inheritance - child  use parent attribute or method  or children class are derived from parent class
+class Car:
+    def service(self):
+        print("The service is should be same for all cars")
+
+class Baleno(Car):
+    def speed(self):
+        print("This has decent engine , It provide high nm of torque and speed")
+
+
+car1=Baleno()
+car1.service()   # Inherited from Car
+car1.speed()     # Defined in Baleno
+
+
+#explanation in below
+
+# Whether the method is defined in the same class or inherited from a parent class, you access it in exactly the same way.
+
+# The syntax never changes:
+
+# object.method()
+# Example 1: Without Inheritance
+# class Student:
+#     def show(self):
+#         print("Student")
+
+# s1 = Student()
+# s1.show()
+
+# Access:
+
+# s1.show()
+# Example 2: With Inheritance
+# class Person:
+#     def show(self):
+#         print("Person")
+
+# class Student(Person):
+#     pass
+
+# s1 = Student()
+# s1.show()
+
+# Access is still:
+
+# s1.show()
+
+# You never write:
+
+# # ❌ Wrong
+# Person.show()
+
+# or
+
+# # ❌ Wrong
+# Student.Person.show()
+
+# You always use the object:
+
+# s1.show()
+# The only difference is what Python does internally
+# Without inheritance
+# s1.show()
+
+# ↓
+
+# Look in Student
+
+# ↓
+
+# Found
+
+# ↓
+
+# Execute
+# With inheritance
+# s1.show()
+
+# ↓
+
+# Look in Student
+
+# ↓
+
+# Not Found
+
+# ↓
+
+# Look in Person
+
+# ↓
+
+# Found
+
+# ↓
+
+# Execute
+
+# So your statement:
+
+# "Whether inheritance or not, access should be same."

@@ -201,7 +201,7 @@ print("Cubic List is",final)
 #Example with lambda function
 num2=[1,2,3,4,5,6]
 fil_res=list(filter(lambda n:n%2==0 , num2))
-print(fil_res)
+print("map_files:",fil_res)
 
 #example using filter with normal function 
 
