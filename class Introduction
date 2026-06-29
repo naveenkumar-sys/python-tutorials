@@ -1,0 +1,42 @@
+# #1.with constructor
+# class Student:
+#     #while we are creating the object , we pass the value to constructor
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+    
+#     def change_name(self,name):
+#         self.name=name
+
+# #creating object
+# s1=Student("Naveen",23)
+# s2=Student("kumar",25)
+
+# print(s1.name)
+# print(s1.age)
+
+# s1.change_name("kamal")
+# print("Student name changed:",s1.name)
+
+
+# print(s2.name)
+# print(s2.age)
+
+
+#2.wihtout constructor
+class Student:
+    #while we are creating the object , we pass the value to constructor
+    def person(self,name,age):
+        self.name=name
+        self.age=age
+    
+    def change_name(self,name):
+        self.name=name
+
+#instance
+s1=Student()
+#creating object and passing the value to method 
+s1.person("Arjun",34)
+print(s1.name)
+s1.change_name("Raj")
+print(s1.name)
