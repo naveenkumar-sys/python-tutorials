@@ -284,3 +284,60 @@ for i in range(len(my_list)): #3
         final+=my_list[j]
     res.append(final)
 print(res)
+
+
+# Exercise 1: List Comprehension Mastery
+
+words = ["apple", "bat", "cherry", "dog", "elderberry"]
+
+# Expected Output: ['APPLE', 'CHERRY', 'ELDERBERRY']
+
+cap_words=[fruit.upper() for fruit in words  if len(fruit)>4]
+print(cap_words)
+
+# Exercise 2: Dictionary Merging with Logic
+
+dict_a = {'a': 10, 'b': 20} 
+dict_b = {'b': 5, 'c': 15}
+
+# Expected Output: Merged Dictionary: {'a': 10, 'b': 25, 'c': 15}
+
+dict_c=dict_a|dict_b   #union operator
+dict_a.update(dict_b)
+dict_d={**dict_a, **dict_b}
+print(dict_a)
+print(dict_c)
+print(dict_d)
+
+# Exercise 3: Frequency Map with Counter
+
+text = "Python Programming"
+dict_res={} #dictionary should not allow duplicate key 
+
+for i in  text:
+    count=0
+    for j in text:
+        if i==j and i !=" ":
+            count+=1
+    if count !=0:
+         dict_res[i]=count
+
+print(dict_res)
+
+#method-2 
+from collections import Counter 
+
+def frq_map(text):
+    clean_text=text.lower().replace(" ","")
+    return Counter(clean_text)
+
+print(frq_map("Python Programming"))
+
+# Exercise 4: Anagram Checker
+word1 = "listen".lower()
+word2 = "silent".lower()
+
+if sorted(word1)==sorted(word2): #sor the alphabetic order
+    print("True")
+else:
+    print("False")
