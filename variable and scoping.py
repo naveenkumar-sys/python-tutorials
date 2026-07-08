@@ -1,4 +1,4 @@
-#  creating Variable 
+#  creating Variable  note -> variable does not store value it stored address (reference) of the value
 a=10
 b=10
 print(a+b)

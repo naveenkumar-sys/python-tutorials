@@ -39,11 +39,22 @@ z=[1,2,3,4,5]
 
 print(6 in z) #retun true if the 6 in present in that z list otherwise false
 
-#6.Indetity operator - check the two value are same by reference 
-a=10
-b=10
-list1=[1,2]
+#6.Identity operator - check the two variable point same memory address or not 
+# An object is the actual data.
+# A reference is like the address or pointer to where that object is stored in memory.
+# A variable stores the reference, not the object itself.
+a=10  # value 10 is stored in memory by reference address
+print("Reference of a", id(a))
+b=10 # now already 10 is having in memory so no need to store again it just assign the reference
+print("Reference of b", id(b))
+list1=[1,2] # even if list is having same value it will store in different memory
+print("Reference of list1", id(list1))
 list2=[1,2]
+print("Reference of list2", id(list2))
+
+list1=list2 # now list1 and list2 will point to same memory
+print("Reference of list1", id(list1))
+print("Reference of list2", id(list2))
 
 print ( a is b) # true coz both reference are equal 
 print (list1 is list2) #  false coz value are same but reference address will be different 

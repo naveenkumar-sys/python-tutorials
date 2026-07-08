@@ -30,7 +30,7 @@
 # gn_num=int(input("Enter the number:"))
 # # print(gn_num*gn_num*gn_num)
 # for i in range(1,gn_num+1):
-#     print(f"current Nuumber is {i} and the cube is {i**3}")
+#     print(f"current Number is {i} and the cube is {i**3}")
     
 # # Exercise 7. Display numbers from a list using a loop
 # # The number must be divisible by five.
@@ -341,3 +341,59 @@ if sorted(word1)==sorted(word2): #sor the alphabetic order
     print("True")
 else:
     print("False")
+
+#Exercise 5: Flatten a Nested List
+nested = [1, [2, 3], [4, [5, 6]], 7]
+res=[]
+
+def flatten(val):
+    if isinstance(val,list):  #isinstance check the item is given data type are or not and return True or False
+        for inner_list in val:
+            if isinstance(inner_list,list):
+                for second_inner in inner_list:
+                    global res
+                    res.append(second_inner)
+            else:
+                res.append(inner_list)
+    else:
+        res.append(val)
+    
+for data in nested:
+    # print(data)
+    flatten(data)
+
+print(res)
+
+# printing the nested value 
+new=[[4,3,6,7],[5,6]]
+
+for inner_list in new:
+    for val in inner_list:
+        print(val)
+
+#Exercise 6: Reverse Each Word of a String
+gn_string="Python is awesome"
+clean_string=gn_string.split(" ")
+reversed_list=[]
+# print(clean_string)
+
+def reverse_ch(val):
+    reversed_list.append(val[::-1])  #slicing which can slice the string and list and tuple and r=range(1,10) print(r[2:6])
+    #[start , end(before value),step] use -1  if we want to reverse
+
+for val in clean_string:
+    reverse_ch(val)
+
+print(" ".join(reversed_list))
+
+
+#Exercise 7: Palindrome Sentence
+sentence="A man, a plan, a canal: Panama"
+# print(sentence)
+def check_palindrome(sentence):
+    clean_sen=" ".join([ch.lower() for ch in sentence if ch.isalnum()])  #isalnum is used to filter only character and digit in the sentence which is for removing thr special characters and changing everything into lower
+    if clean_sen == clean_sen[::-1]:
+        return True
+res=check_palindrome(sentence)
+print(res)
+
