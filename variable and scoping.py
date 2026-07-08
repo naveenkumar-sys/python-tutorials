@@ -41,3 +41,8 @@ print(len([1,2,3])) #buit-in words
 
 name="kamal"
 print(f"my is name is {name}") 
+
+
+a=10
+a=20
+print(a)
